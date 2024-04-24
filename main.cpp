@@ -22,6 +22,12 @@ const string EMPDATA_FILENAME = "employees.dat";
 const string TIMEDATA_FILENAME = "emp_time.dat";
 const string PAYROLL_REPORT_FILENAME = "payroll.txt"; // might need to provide some special permissions in order to do this with MacOS.
 
+// Data structure for an employee record
+struct EmployeeRecord
+{
+    char employeeType; // H for hourly and S for salary
+};
+
 int main()
 {
     // Employee *e;
