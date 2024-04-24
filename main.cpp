@@ -9,7 +9,7 @@
 #include <stdexcept>
 using namespace std;
 
-// My headeres
+// Headers
 #include "employee.h"
 #include "salaryemployee.h"
 #include "hourlyemployee.h"
