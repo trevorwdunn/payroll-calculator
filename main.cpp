@@ -42,7 +42,11 @@ struct EmployeeTime
 };
 
 // Function declarations
-
+void loadEmployeeData(vector<Employee *> &employees, string fileName); // this is a vector that can store both hourly employees and salary employees
+void loadEmployeeTime(vector<EmployeeTime> &empTime, string fileName);
+void createEmployeeReport(const vector<Employee *> &employees, const vector<EmployeeTime> &empTime, string fileName);
+vector<Employee *>::const_iterator
+findEmployee(const vector<Employee *> &employees, const string id);
 
 int main()
 {
