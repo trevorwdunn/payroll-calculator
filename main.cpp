@@ -25,8 +25,24 @@ const string PAYROLL_REPORT_FILENAME = "payroll.txt"; // might need to provide s
 // Data structure for an employee record
 struct EmployeeRecord
 {
-    char employeeType; // H for hourly and S for salary
+    char employeeType;                // H for hourly and S for salary
+    char id[EMPID_LENGTH];            // Id for the employee
+    char firstName[FIRSTNAME_LENGTH]; // this is a c string. It is used so that we can guaruntee the number of bytes are in an employee record
+    char lastName[LASTNAME_LENGTH];   // this is a c string. It is used so that we can guaruntee the number of bytes are in an employee record
+    double salary;                    // weekly or hourly depending on type.
+    // 40 bytes
 };
+
+// Data structure for a time card
+struct EmployeeTime
+{
+    char id[EMPID_LENGTH];
+    double hours;
+    // 15 bytes
+};
+
+// Function declarations
+
 
 int main()
 {

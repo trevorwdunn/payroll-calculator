@@ -1,2 +1,2 @@
 # This is just a project for class. 
-This is one of the final code-along projects used in my Programming Fundamentals II class at TCC. This is not a product, but I do not care if anyone else wants to use it. 
+This is one of the final code-along projects used in Douglas Atkinson's Programming Fundamentals II class at TCC. This is not a product, but I do not care if anyone else wants to use it. 
