@@ -50,11 +50,28 @@ findEmployee(const vector<Employee *> &employees, const string id);
 
 int main()
 {
-    // Employee *e;
+    Employee *e;
     SalaryEmployee s("0123", "Jack", "Sprat", 600);
     HourlyEmployee h("2468", "Jill", "Hill", 10);
     cout << s.getEmpID() << ": " << s.calculatePay() << endl;
     cout << h.getEmpID() << ": " << h.calculatePay(87) << endl;
 
     return 0;
+}
+
+void loadEmployeeData(vector<Employee *> &employees, string fileName)
+{
+}
+
+void loadEmployeeTime(vector<EmployeeTime> &empTime, string fileName)
+{
+}
+
+void createEmployeeReport(const vector<Employee *> &employees, const vector<EmployeeTime> &empTime, string fileName)
+{
+}
+
+vector<Employee *>::const_iterator findEmployee(const vector<Employee *> &employees, const string id)
+{
+    return vector<Employee *>::const_iterator();
 }
